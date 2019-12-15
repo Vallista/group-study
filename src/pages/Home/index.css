@@ -1,0 +1,89 @@
+.calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: rgb(54, 54, 54);
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+.calculator > .input-layer {
+  width: 100%;
+  height: 150px;
+  box-sizing: border-box;
+}
+
+.calculator > .input-layer > .input {
+  width: 100%;
+  height: 150px;
+
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: rgb(44, 44, 44);
+  border: none;
+  box-sizing: border-box;
+  padding: 12px;
+  text-align: right;
+  color: white;
+  font-size: 40px;
+  font-weight: 200;
+  outline: none;
+  line-break: auto;
+  white-space: pre-line;
+}
+
+.calculator > .button-layer {
+  width: 100%;
+  height: auto;
+}
+
+.calculator > .button-layer > .row {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-spacing: 0;
+  border: none;
+}
+
+.calculator > .button-layer > .row > .row-item {
+  width: 25%;
+  height: 50px;
+  box-sizing: border-box;
+  background-color: rgb(79, 79, 79);
+}
+
+.calculator > .button-layer > .row > .row-item > .item-button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.calculator > .button-layer > .row > .row-item:nth-child(n) {
+  border-top: 1px solid rgb(44, 44, 44);
+  border-left: 1px solid rgb(44, 44, 44);
+}
+
+.calculator > .button-layer > .row > .row-item:last-child {
+  background-color: rgb(243 172 65);
+}
+
+.calculator > .button-layer > .row:nth-child(5) > .row-item:first-child {
+  border-bottom-left-radius: 5px;
+}
+
+.calculator > .button-layer > .row:nth-child(5) > .row-item:last-child {
+  border-bottom-right-radius: 5px;
+}
