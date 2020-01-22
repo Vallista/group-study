@@ -1,0 +1,37 @@
+.advertisement-wrapper {
+  width: 100vw;
+  height: 280px;
+  padding-left: 12px;
+  padding-right: 12px;
+  box-sizing: border-box;
+
+  .name-wrapper {
+    border-top: 1px solid #e9ecef;
+    padding-top: 12px;
+    padding-bottom: 16px;
+
+    .name {
+      font-size: 20px;
+    }
+  }
+
+  .advertisement-contents {
+    width: 100%;
+    height: 220px;
+    overflow-x: scroll;
+    box-sizing: border-box;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+
+      li {
+        list-style: none;
+        width: auto;
+        margin-right: 12px;
+      }
+    }
+  }
+}

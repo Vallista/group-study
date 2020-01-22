@@ -1,0 +1,83 @@
+.nav-header {
+  background-color: #2b96ed;
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 48px;
+    box-sizing: border-box;
+    padding: 12px;
+    align-items: center;
+
+    .hamburger {
+      width: 24px;
+      height: 24px;
+    }
+
+    .logo {
+      width: 92px;
+      height: 20px;
+    }
+
+    .search {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .categories {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    ul,
+    li {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    li {
+      margin-right: 12px;
+
+      // & 표시는 나 자신을 뜻함
+      &:last-child {
+        margin-right: 0;
+      }
+
+      span {
+        color: white;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .city-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    // calc = calculate = 계산하다 css 내에서 계산을 하는데 쓰입니다.
+    width: 100%;
+    height: calc(100% - 48px);
+    background-color: rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    padding: 12px;
+
+    .city-country {
+      color: white;
+    }
+
+    .city-name {
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+p {
+  margin: 0;
+}
+
+.advertisement-container {
+  width: 160px;
+  height: 200px;
+
+  .image-container {
+    width: auto;
+    height: auto;
+
+    .image {
+      border-radius: 4px;
+      width: 160px;
+      height: 106px;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .advertisement-detail-container {
+    width: 100%;
+    height: 94px;
+    box-sizing: border-box;
+    padding-top: 8px;
+
+    .breadcrumb-container {
+      width: 100%;
+      height: auto;
+      margin-bottom: 4px;
+
+      .breadcrumb {
+        font-size: 12px;
+        color: #848c94;
+        white-space: pre-line;
+      }
+    }
+    .title-container {
+      width: 100%;
+      height: auto;
+      margin-bottom: 4px;
+
+      .title {
+        white-space: pre-line;
+        font-size: 14px;
+        line-height: 1.29;
+        color: #343a40;
+        width: 100%;
+        font-weight: 500;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+      }
+    }
+    .cost-container {
+      .cost {
+        font-size: 13px;
+        color: #666d75;
+        font-weight: 500;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.card {
+  position: relative;
+  min-width: 120px;
+  max-width: 400px;
+  min-height: 100px;
+  max-height: 120px;
+  box-sizing: border-box;
+  padding: 12px;
+  border-radius: 6px;
+  // background-image: url(https://d2ur7st6jjikze.cloudfront.net/landscapes/4720_medium_square_1535703132.jpg?1535703132);
+  background-size: cover;
+  background-position: bottom;
+
+  span {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+  }
+}
